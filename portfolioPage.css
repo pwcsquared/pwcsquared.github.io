@@ -123,7 +123,12 @@ p {
 .projectImg {
 	width: 150px;
 	height: 150px;
-	box-shadow: 0 1px #555;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	transition: transform 200ms ease;
+}
+
+.projectCard:hover .projectImg{
+	transform: scale(1.05);
 }
 
 .connectContainer {
@@ -165,20 +170,20 @@ p {
 .panel {
 	width: 100%;
 	min-height: 130vh;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .home {
-	background: url("https://cloud.githubusercontent.com/assets/16520293/15035235/6bd61320-1245-11e6-8d36-a31ecad9a692.jpg") no-repeat center fixed;
-	background-size: cover;
+	background-image: url("https://cloud.githubusercontent.com/assets/16520293/15035235/6bd61320-1245-11e6-8d36-a31ecad9a692.jpg");
 }
 
 .portfolio {
-	background: url("https://cloud.githubusercontent.com/assets/16520293/15035239/764c0d96-1245-11e6-8a66-a05ce09ffcc0.jpg") no-repeat center fixed;
-	background-size: cover;
+	background-image: url("https://cloud.githubusercontent.com/assets/16520293/15035239/764c0d96-1245-11e6-8a66-a05ce09ffcc0.jpg");
 }
 
 .connect {
-	background: url("https://cloud.githubusercontent.com/assets/16520293/15035221/2a8cc21a-1245-11e6-990d-afcb87458d53.jpg") no-repeat center fixed;
+	background-image: url("https://cloud.githubusercontent.com/assets/16520293/15035221/2a8cc21a-1245-11e6-990d-afcb87458d53.jpg");
 }
 
 @media(max-width: 768px){
